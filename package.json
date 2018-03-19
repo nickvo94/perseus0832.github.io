@@ -2,8 +2,10 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://perseus0832.github.io/public",
   "dependencies": {
     "create-react-class": "^15.6.3",
+    "gh-pages": "^1.1.0",
     "material-ui": "^0.20.0",
     "material-ui-table-edit": "^3.0.3",
     "npm": "^5.7.1",
@@ -16,6 +18,8 @@
     "react-tap-event-plugin": "^3.0.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
